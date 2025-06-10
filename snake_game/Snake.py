@@ -426,6 +426,3 @@ back_ground_end = pygame.image.load("pictures\\snake_bg_end.png")
 back_ground_game = pygame.image.load("pictures\\grass_bg.png")
 rules_back_ground = pygame.image.load("pictures\\rules_bg.png")
 score_board_back_ground = pygame.image.load("pictures\\score_board_bg.png")
-
-# play
-game.menu()
