@@ -64,10 +64,11 @@ class Food:
         self.y = random.randrange(1, 47) * 10
         self.width = 10
         self.height = 10
+        self.image = pygame.image.load("pictures\\apple.png")
+        self.image = pygame.transform.scale(self.image, (self.width, self.height))
 
     def display_food(self):
-        pygame.draw.rect(screen, red,
-                         (self.x, self.y, self.width, self.height))
+        screen.blit(self.image, (self.x, self.y))
 
 
 class Tail:
@@ -426,3 +427,4 @@ back_ground_end = pygame.image.load("pictures\\snake_bg_end.png")
 back_ground_game = pygame.image.load("pictures\\grass_bg.png")
 rules_back_ground = pygame.image.load("pictures\\rules_bg.png")
 score_board_back_ground = pygame.image.load("pictures\\score_board_bg.png")
+apple_image = pygame.image.load("pictures\\apple.png")
